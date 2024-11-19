@@ -10,7 +10,7 @@
   # if it is snowy, print "coat"
   # if it is icy, print "yak traks"
 
-weather = "sunny"
+weather = "icy"
 
 if weather == "sunny"
   p "sunscreen"
@@ -41,11 +41,13 @@ end
 # Experiment with manipulating the value held within num_quarters
 # to make sure both conditions can be achieved.
 
-num_quarters = 0
+num_quarters = 3
 
-puts "I have enough money for a gumball"
-puts "I don't have enough money for a gumball"
-
+if num_quarters >= 2
+  puts "I have enough money for a gumball"
+else
+  puts "I don't have enough money for a gumball"
+end
 
 #####################
 # Using the variables defined below, write code that will tell you
@@ -53,13 +55,40 @@ puts "I don't have enough money for a gumball"
 # at least two cups of flour and sauce.
 
 # You should be able to change the variables to achieve the following outputs:
+
 # If cups_of_flour = 1 and has_sauce = true, print "I cannot make pizza"
-# If cups_of_flour = 5 and has_sauce = false, print "I cannot make pizza"
-# If cups_of_flour = 2 and has_sauce = true, print "I can make pizza"
-# If cups_of_flour = 3 and has_sauce = true, print "I can make pizza"
+
+# if cups_of_flour = 1 && has_sauce = true
+#   print "I cannot make pizza"
+# end
+
+# # If cups_of_flour = 5 and has_sauce = false, print "I cannot make pizza"
+
+# if cups_of_flour = 5 && has_sauce = false
+#   print "I cannot make pizza"
+# end
+
+# # If cups_of_flour = 2 and has_sauce = true, print "I can make pizza"
+
+# if cups_of_flour = 2 && has_sauce = true
+#   print "I can make pizza"
+# end
+
+# # If cups_of_flour = 3 and has_sauce = true, print "I can make pizza"
+
+# if cups_of_flour = 3 && has_sauce = true
+#   print "I can make pizza"
+# end
+
+cups_of_flour = 2
+has_sauce = true
+
+
+if cups_of_flour >=2 && has_sauce
+  puts "I can make pizza"
+else 
+  puts "I cannot make pizza"
+end
 
 # Experiment with manipulating the value held within both variables
 # to make sure all above conditions output what you expect.
-
-cups_of_flour = 1
-has_sauce = true
